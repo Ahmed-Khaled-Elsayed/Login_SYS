@@ -23,7 +23,6 @@ function addUser()
         }
         users.push(user);
         localStorage.setItem("users" , JSON.stringify(users));
-        // location.assign("./index.html");
         window.location.replace("./index.html");
     }
 }
@@ -48,7 +47,7 @@ function validateInputs()
     if(userName.value.length=== 0 || userEmail.value.length=== 0 || password.value.length=== 0)
     {  
         errorMsg.innerHTML=`
-        <p><i class="fa-solid fa-triangle-exclamation"></i> All Fields required</p>
+        <p><i class="fa-solid fa-triangle-exclamation"></i> All Fields are required</p>
         `
         return false;
     }
@@ -110,6 +109,5 @@ signupBtn.addEventListener("click" , function()
 
 login.addEventListener("click" , function()
 {
-    // location.assign("./index.html");
     window.location.replace("./index.html");
 })

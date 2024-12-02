@@ -57,3 +57,26 @@ h2
 {
     cursor: pointer;
 }
+
+
+@media screen and (max-width:576px)
+{
+    .container .inputs
+    {
+        width: 95% !important;
+    }    
+}
+@media screen and (min-width:576px) and (max-width:768px)
+{
+    .container .inputs
+    {
+        width: 70% !important;
+    }    
+}
+@media screen and (min-width:768px) and (max-width:1200px)
+{
+    .container .inputs
+    {
+        width: 70% !important;
+    }    
+}

@@ -15,7 +15,7 @@ function Login()
 {
     if(validateInputs() && checkUser(userEmail.value , password.value))
     {
-        location.assign("./home.html");
+        window.location.replace("./home.html");
     }
 }
 
@@ -25,7 +25,7 @@ function validateInputs()
     if(userEmail.value.length === 0 || password.value.length === 0)
     { 
         errorMsg.innerHTML=`
-        <p><i class="fa-solid fa-triangle-exclamation"></i> All Fields required</p>
+        <p><i class="fa-solid fa-triangle-exclamation"></i> All Fields are required</p>
         `
         return false;
     }
@@ -47,7 +47,7 @@ function checkUser(email , pass)
             else
             {
                 errorMsg.innerHTML=`
-                <p><i class="fa-solid fa-triangle-exclamation"></i> password incorrect</p>
+                <p><i class="fa-solid fa-triangle-exclamation"></i> incorrect password</p>
                 `
                 return false;
             }
@@ -55,7 +55,7 @@ function checkUser(email , pass)
     }
 
     errorMsg.innerHTML=`
-        <p><i class="fa-solid fa-triangle-exclamation"></i> Email incorrect</p>
+        <p><i class="fa-solid fa-triangle-exclamation"></i> incorrect Email</p>
         `
         return false;
 };
@@ -68,5 +68,5 @@ loginBtn.addEventListener("click" , function()
 
 signup.addEventListener("click" , function()
 {
-    location.assign("./signup.html");
+    window.location.replace("./signup.html");
 })
