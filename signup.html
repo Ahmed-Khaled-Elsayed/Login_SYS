@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign UP</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <script
+      src="https://kit.fontawesome.com/7d6ed240dd.js"
+      crossorigin="anonymous"
+    ></script>
+</head>
+<body>
+    <!-- sign up -->
+    <div class="container d-flex align-items-center vh-100 justify-content-center ">
+        <div class="inputs w-30 text-center p-4 rounded-2">
+            <h2 class="py-4">Sign Up</h2>
+            <input id="userName" class="form-control text-white my-3" type="text" placeholder="name">
+            <input id="userEmail" class="form-control text-white my-3" type="email" placeholder="Email">
+            <input id="password" class="form-control text-white my-3" type="password" placeholder="Password">
+            <div id="errorMsg" class="msg text-danger fs-5 fw-bold ">
+                <!-- <p><i class="fa-solid fa-triangle-exclamation"></i> </p> -->
+            </div>
+            <button class="btn  mb-4">Sign Up</button>
+            <span class="d-block text-white">Already have an account? <span id="login" class="text-info">Login</span></span>
+        </div>
+    </div>
+
+    <script src="JS/bootstrap.bundle.min.js"></script>
+    <script src="JS/signup.js"></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <script
+      src="https://kit.fontawesome.com/7d6ed240dd.js"
+      crossorigin="anonymous"
+    ></script>
+</head>
+<body>
+    <!-- Main page -->
+    <div class=" home container vh-100 d-flex flex-column align-items-center">
+        <div class="welcome mx-auto w-70 text-center pt-5">
+            <h1 class="text-white">WELCOME !! <span class="d-block" id="userName"></span><i class="fa-solid fa-heart text-danger"></i></h1>
+        </div>
+        <div class="signedin">
+            <button id="LogoutBtn" class="logout btn bg-info d-none">Logout</button>
+        </div>
+        <div class="logedout d-flex">
+            <button id="LoginBtn" class="login btn bg-info me-3 d-none">login</button>
+            <button id="SignUpBtn" class="signup btn bg-info d-none">signup</button>
+        </div>
+        
+    </div>
+
+    <script src="JS/bootstrap.bundle.min.js"></script>
+    <script src="JS/home.js"></script>
+</body>
+</html>
