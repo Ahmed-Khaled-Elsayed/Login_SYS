@@ -3,6 +3,7 @@ let LogoutBtn=document.getElementById("LogoutBtn");
 let LoginBtn=document.getElementById("LoginBtn");
 let SignUpBtn=document.getElementById("SignUpBtn");
 
+
 if(localStorage.getItem("UserSession") !== null)
 {
     userName.innerHTML= localStorage.getItem("UserSession");
@@ -18,15 +19,19 @@ else
 LogoutBtn.addEventListener("click", function()
 {
     localStorage.removeItem("UserSession");
-    location.assign("./index.html");
+    // location.assign("./index.html");
+    window.location.replace("./index.html");
 });
 
 LoginBtn.addEventListener("click",function()
 {
-    location.assign("./index.html");
+    // location.assign("./index.html");
+    window.location.replace("./index.html");
+    
 });
 
 SignUpBtn.addEventListener("click",function()
 {
-    location.assign("./signup.html");
+    // location.assign("./signup.html");
+    window.location.replace("./signup.html");
 });

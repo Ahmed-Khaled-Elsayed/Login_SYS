@@ -23,7 +23,8 @@ function addUser()
         }
         users.push(user);
         localStorage.setItem("users" , JSON.stringify(users));
-        location.assign("./index.html");
+        // location.assign("./index.html");
+        window.location.replace("./index.html");
     }
 }
 
@@ -109,5 +110,6 @@ signupBtn.addEventListener("click" , function()
 
 login.addEventListener("click" , function()
 {
-    location.assign("./index.html");
+    // location.assign("./index.html");
+    window.location.replace("./index.html");
 })
